@@ -8,7 +8,7 @@ function Profile(props) {
     const { loading } = useAuth0();
 
     useEffect(() => {
-        props.mount(user)
+        props.mount(user);
     }, []);
 
     if (loading) {

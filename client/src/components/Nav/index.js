@@ -22,24 +22,24 @@ const Nav = () => {
                     <div className="scene">
                         <div className="box center-align">
                             <div className="front face center-align" id="org">
-                                <img className="plane" src="/img/home-page-icon.png" />
+                                <img className="plane" src="/img/home-new.png" />
                                 <i className="fas fa-home"></i>
                             </div>
                             <Link to="/home">
-                                <div className="circle right face" href="/home">
+                                <div className="right face" href="/home">
                                     <p>HOME</p>
                                 </div>
                             </Link>
                         </div>
                     </div>
                     <div className="scene">
-                        <div className="box modal-trigger" href="#modal1">
+                        <div className="box" href="#modal1">
                             <div className="front face center-align" id="org">
-                                <img className="plane" src="/img/circled-user.png" />
+                                <img className="plane" src="/img/profile.png" />
                                 <i className="fas fa-home"></i>
                             </div>
                             <Link to="/code">
-                                <div className="circle right face center-align">
+                                <div className=" right face center-align">
                                     <p>PROFILE</p>
                                 </div>
                             </Link>
@@ -47,18 +47,26 @@ const Nav = () => {
                     </div>
                     <div className="scene">
                         <div className="box center-align" href="#modal1">
-                            <div className="front face center-align" id="org">
-                                <img className="plane" src="/img/login.png" />
-                                <i className="fas fa-home"></i>
-                            </div>
                             <Link to="/home">
-                                {!isAuthenticated && (<div className="circle right face" onClick={() => loginWithRedirect({})}>
-                                    <p>LOGIN</p>
-                                </div>)}
-                                {isAuthenticated && (<div className="circle right face" onClick={() => logout()}>
-                                    <p>LOGOUT</p>
-                                    <p>{user.given_name}</p>
-                                </div>)}
+                                {!isAuthenticated && (<>
+                                    <div className="front face center-align" id="org">
+                                        <img className="plane" src="/img/login-new.png" />
+                                        <i className="fas fa-home"></i>
+                                    </div>
+                                    <div className="right face" onClick={() => loginWithRedirect({})}>
+                                        <p>LOGIN</p>
+                                    </div>
+                                </>)}
+                                {isAuthenticated && (<>
+                                    <div className="front face center-align" id="org">
+                                        <img className="plane" src="/img/logout.png" />
+                                        <i className="fas fa-home"></i>
+                                    </div>
+                                    <div className="right face" onClick={() => logout()}>
+                                        <p>LOGOUT</p>
+                                        <p>{user.given_name}</p>
+                                    </div>
+                                </>)}
                             </Link>
                         </div>
                     </div>

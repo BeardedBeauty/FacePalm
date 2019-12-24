@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-require('dotenv').config();
+// require('dotenv').config();
 const express = require("express");
 const morgan = require("morgan");
 const app = express();
@@ -25,7 +25,7 @@ app.get("*", (req, res) => {
 });
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.topsecretdatabase, { useNewUrlParser: true })
+mongoose.connect("mongodb://Mark:databas3password@ds253368.mlab.com:53368/heroku_n3zsj9l9", { useNewUrlParser: true })
   .then(() => console.log(`Database connected successfully`))
   .catch(err => console.log(err));
 

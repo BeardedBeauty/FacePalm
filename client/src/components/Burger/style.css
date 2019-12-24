@@ -1,11 +1,11 @@
-  header {
+  /* header {
     position: fixed;
     width: 200px;
     background-color: #99CB38;
     height: 100%;
     transform: translateX(-200px);
     transition: 0.1s ease-in-out;
-  }
+  } */
   
   #masthead.menu-open {
           transform: translateX(0px);

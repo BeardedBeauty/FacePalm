@@ -25,8 +25,8 @@ function Wall(props) {
                     </>
                 }
             </div>
-            <div className="board z-depth-2">
-                <ul className="collection">
+            <div className="board">
+                <ul className="">
                     {props.children}
                 </ul>
             </div>

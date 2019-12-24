@@ -17,6 +17,19 @@ function Create(props) {
             <label for="textarea1">content</label>
             <br />
             <button className={props.button} type="submit" name="action" onClick={() => props.save(user)}>save</button>
+
+
+
+            {/* <Card>
+                <Name> JOHN W. OCHS </Name>
+
+                <Phone> 952-215-7440 </Phone>
+                <email>{"john.w.ochs0@gmail.com"}</email>
+                <website href="https://prtflo3.herokuapp.com" />
+                <title> Full Stack Web Developer </title>
+            </Card> */}
+
+
         </>
     )
 }

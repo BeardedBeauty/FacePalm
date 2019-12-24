@@ -1,9 +1,10 @@
 import React from "react";
+import "./style.css";
 
 function Userpost(props) {
     return (
         <>
-            <li className="collection-item avatar">
+            <li className="userpost z-depth-1">
                 <img src={props.img} alt="" class="circle circleme" />
                 <span className="title">{props.username}</span>
                 <p>{props.text}</p>

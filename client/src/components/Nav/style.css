@@ -28,7 +28,6 @@
 .scene:hover .box {
     transform: rotateY(-90deg);
     cursor: pointer;
-    margin-top: 15px;
     margin-bottom: 15px;
 }
 
@@ -42,15 +41,16 @@
 
 .front {
     transform: rotateY(0deg);
-    padding-top: 48px;
+    padding-top: 25px;
     transition: .2s;
+    background-color: #188bc0;
 }
 
 .right {
     transform: rotateY(90deg);
     left: 100%;
-    background-color: #c035c5;
-    color: rgb(167, 216, 247);
+    background-color: #31c444;
+    color: rgb(255, 255, 255);
     padding-top: 25px;
     transition: .2s;
 }
