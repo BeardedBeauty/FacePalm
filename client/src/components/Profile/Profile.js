@@ -16,7 +16,7 @@ function Profile(props) {
     };
 
     return (
-        <div className="profcard z-depth-1">
+        <div className={props.addstyle + " profcard z-depth-1 center"}>
             {!isAuthenticated && (
                 <code>Please login to view profile</code>
             )}

@@ -1,6 +1,13 @@
-.title {
-    height: 1000px;
+.titleproj {
+    height: 800px;
     border-radius: 8px;
     border: 1px solid white (185, 115, 187);
     overflow: scroll;
+    left: 0;
+    width: 20%;
+    position: absolute;
+}
+
+.projmarjin {
+    margin-left: 200px;
 }

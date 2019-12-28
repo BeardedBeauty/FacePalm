@@ -5,7 +5,6 @@ import API from "../../utils/API";
 import "./style.css";
 import Nav from "../Nav";
 import "./style.css";
-import { List, ListItem } from "../../components/List";
 import Profile from '../Profile/Profile.js';
 import Create from '../Create';
 import View from '../View';
@@ -68,7 +67,7 @@ class Code extends React.Component {
         }).catch(err => console.log(err));
     };
 
-    selectProj = (proj) => {
+    selectProj = proj => {
         API.getCont(proj.id).then(res => {
             console.log(res.data)
             this.setState({ projContent: res.data });
@@ -76,7 +75,7 @@ class Code extends React.Component {
         this.setState({ newContent: 2 });
     };
 
-    mount = (user) => {
+    mount = user => {
         this.setState({ me: user });
         user
             ? API.getProjUser(user.nickname).then(res => {

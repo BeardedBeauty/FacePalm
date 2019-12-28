@@ -18,10 +18,10 @@
 }
     
 ::-webkit-scrollbar-thumb {
-    background: rgb(165, 17, 250);  
+    background: #31c444;  
     /* border-radius: 6px; */
 }
     
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(216, 34, 216);  
+    background: rgb(97, 14, 145);  
 }

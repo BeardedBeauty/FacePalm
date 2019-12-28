@@ -3,14 +3,11 @@ footer.page-footer {
     color: #095763;
     float: left;
     width: 100%;
+    /* min-height: 100vh */
 }
 
 .footer-copyright {
     background-color: white;
     font-family: 'Courier New', Courier, monospace;
     width: 100%;
-}
-
-.font-color {
-    color: black;
 }

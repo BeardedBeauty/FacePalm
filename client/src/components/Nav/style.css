@@ -1,11 +1,9 @@
 .boxinternal {
     height: 100px;
-    width: 750px;
+    width: 800px;
     /* position: fixed; */
     z-index: 9;
-    /* border-top: 8px solid #03a9f4; */
     transition: .2s;
-    /* background-color: lightblue; */
 }
 
 .scene {

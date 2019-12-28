@@ -4,7 +4,7 @@ import "./style.css";
 function Projects(props) {
     return (
         <>
-            <div className="title">
+            <div className="titleproj">
                 <div className="center">
                     <p>{props.title}</p>
                 </div>

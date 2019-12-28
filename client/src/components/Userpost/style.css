@@ -1,6 +1,35 @@
 .userpost {
     width: 95%;
     background-color: #ececec;
-    margin: 20px;
+    margin-bottom: 30px;
+    margin-left: 10px;
     border-radius: 6px;
+    float: left;
+}
+
+.posttext {
+    margin-left: 20px;
+    float: left;
+}
+
+.usertitle {
+    width: 80px;
+    background-color: #c0c0c0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 8px;
+    float: left;
+}
+
+.transition {
+    height: 4px;
+    width: 100%;
+    background-image: linear-gradient(#c0c0c0, #636363);
+}
+
+.titlepost {
+    color: #636363;
+    margin-left: 20px;
+    height: 0;
+    float: left;
 }

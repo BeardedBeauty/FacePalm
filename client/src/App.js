@@ -34,7 +34,7 @@ class App extends React.Component {
     render() {
         return (
             <Wrapper>
-                <h1 className="left black-text">{this.state.plates[this.state.name]}</h1>
+                <h1 className="facepalm black-text">{this.state.plates[this.state.name]}</h1>
                 {/* <Burger click={this.burger} /> */}
                 <Router>
                     <Switch>

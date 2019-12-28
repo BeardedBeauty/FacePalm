@@ -43,10 +43,6 @@ function Splash() {
                     </Link>
                 </div>
             </div>
-
-            {/* {isAuthenticated && (<div className="circle right face" onClick={() => logout()}>
-                                    <p>LOGOUT</p>
-                                </div>)} */}
         </Wrapper >
     )
 }

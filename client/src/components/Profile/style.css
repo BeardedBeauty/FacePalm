@@ -1,12 +1,18 @@
 .profcard {
     background-color: #ececec;
     height: 400px;
-    width: 350px;
-    margin-left: 30%;
+    width: 25%;
     border-radius: 6px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 50px;
+}
+
+.fixedProfCard {
+    position: absolute;
+    margin-top: -850px;
+    margin-left: 74%;
+    height: 100%;
 }
 
 .divide {

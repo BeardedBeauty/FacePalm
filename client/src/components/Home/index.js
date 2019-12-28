@@ -4,6 +4,7 @@ import Wall from "../Wall";
 import Projects from "../Projects";
 import Userpost from "../Userpost";
 import Nav from "../Nav";
+import Profile from "../Profile/Profile.js";
 import API from "../../utils/API";
 import View from '../View';
 
@@ -17,7 +18,8 @@ class Home extends React.Component {
             btnState: 0,
             comments: [],
             view: true,
-            projContent: null
+            projContent: null,
+            me: null
         };
     };
 
@@ -60,31 +62,42 @@ class Home extends React.Component {
     };
 
     wall = () => {
-        this.setState({ projContent: null })
+        this.setState({ projContent: null });
         console.log(this.state.projContent);
     }
+
+    mount = user => {
+        this.setState({ me: user });
+        user
+            ? API.getProjUser(user.nickname).then(res => {
+                console.log(res.data)
+                // this.setState({ projects: res.data.reverse() });
+            }).catch(err => console.log(err))
+            : console.log("not logged");
+    };
 
     render() {
         return (
             <>
                 <div className="cover"></div>
                 <Nav />
-                <br /> <br /> <br />
+                <div className="row"></div>
+                <Projects title={"recentProjects"}>
+                    {this.state.projects.map(proj =>
+                        <Projlist
+                            user={proj.user}
+                            selectProj={this.selectProj}
+                            projtitle={proj.name}
+                            id={proj._id}
+                        />
+                    )}
+                </Projects>
                 <div className="container">
                     <div className="row">
-                        <div className="col s12 m3 l3">
-                            <Projects title={"recentProjects"}>
-                                {this.state.projects.map(proj =>
-                                    <Projlist
-                                        user={proj.user}
-                                        selectProj={this.selectProj}
-                                        projtitle={proj.name}
-                                        id={proj._id}
-                                    />
-                                )}
-                            </Projects>
-                        </div>
-                        <div className="col s12 m9">
+                        {/* <div className="col s12 m3 l3">
+
+                        </div> */}
+                        <div className="col s12 m9 offset-l1 offset-m1">
                             {!this.state.projContent && <Wall
                                 postpost={this.postpost}
                                 postContent={this.input}
@@ -119,6 +132,10 @@ class Home extends React.Component {
                     <Action />
                 </div> */}
                 </div >
+
+                <Profile
+                    mount={this.mount}
+                    addstyle={"fixedProfCard"} />
             </>
         )
     }
