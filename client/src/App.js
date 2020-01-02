@@ -43,7 +43,6 @@ class App extends React.Component {
                         <Route path="/" exact component={Splash} />
                     </Switch>
                 </Router>
-                <Footer />
             </Wrapper >
         );
     };

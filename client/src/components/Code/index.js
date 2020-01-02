@@ -6,6 +6,7 @@ import "./style.css";
 import Nav from "../Nav";
 import "./style.css";
 import Profile from '../Profile/Profile.js';
+// import ProfileCSS from "../Profile";
 import Create from '../Create';
 import View from '../View';
 
@@ -143,7 +144,10 @@ class Code extends React.Component {
                                 {this.state.newContent === 0 &&
                                     <>
                                         <br /> <br /> <br /><br />
-                                        <Profile mount={this.mount} />
+                                        <Profile
+                                            mount={this.mount}
+                                            addstyle={"profileCard"}
+                                        />
                                     </>}
                                 {this.state.newContent === 2 &&
                                     <></>
@@ -160,26 +164,6 @@ class Code extends React.Component {
                             </div>
                         </div>
                     </div>
-                    {/* {console.log("f")}
-                    {this.state.users.length ? (
-                        <List>
-
-                            {this.state.users.map(user => {
-                                return (
-                                    <ListItem key={user._id}>
-                                        <a href={"/users/" + user._id}>
-                                            <strong>
-                                                {user.username} by {user.username}
-                                                {console.log("test")}
-                                            </strong>
-                                        </a>
-                                    </ListItem>
-                                );
-                            })}
-                        </List>
-                    ) : (
-                            <h3>No Results to Display</h3>
-                        )} */}
                 </div>
             </>
         )

@@ -7,6 +7,8 @@ import Nav from "../Nav";
 import Profile from "../Profile/Profile.js";
 import API from "../../utils/API";
 import View from '../View';
+// import Footer from "../Footer";
+import ScrollFooter from '../ScrollFooter';
 
 class Home extends React.Component {
     constructor(props) {
@@ -46,12 +48,22 @@ class Home extends React.Component {
             this.setState({ projects: res.data.reverse() });
             console.log(this.state.projects);
         }).catch(err => console.log(err));
+        window.addEventListener("scroll", this.onScroll, true);
+    };
+
+    componentWillUnmount = () => {
+        window.removeEventListener("scroll", this.onScroll, true);
+    }
+
+    onScroll = () => {
+        document.getElementById(".board")
+        console.log("scrl");
     };
 
     get = () => {
         API.getComments().then(res => {
             this.setState({ comments: res.data.reverse() });
-        }).catch(err => console.log(err))//.then(() => console.log(this.state.comments));
+        }).catch(err => console.log(err));
     };
 
     selectProj = (proj) => {
@@ -82,7 +94,7 @@ class Home extends React.Component {
                 <div className="cover"></div>
                 <Nav />
                 <div className="row"></div>
-                <Projects title={"recentProjects"}>
+                <Projects title={"newProjects"}>
                     {this.state.projects.map(proj =>
                         <Projlist
                             user={proj.user}
@@ -92,18 +104,18 @@ class Home extends React.Component {
                         />
                     )}
                 </Projects>
+                <Profile
+                    mount={this.mount}
+                    addstyle={"fixedProfCard"} />
+                <ScrollFooter />
                 <div className="container">
                     <div className="row">
-                        {/* <div className="col s12 m3 l3">
-
-                        </div> */}
                         <div className="col s12 m9 offset-l1 offset-m1">
                             {!this.state.projContent && <Wall
                                 postpost={this.postpost}
                                 postContent={this.input}
                                 buttonClass={this.state.button[this.state.btnState]}
-                            // posts={this.state.comments}
-                            >
+                                onScroll={this.onScroll} >
                                 {this.state.comments.map(post =>
                                     <Userpost
                                         text={post.comment}
@@ -121,23 +133,13 @@ class Home extends React.Component {
                                     title={this.state.projContent.name}
                                     content={this.state.projContent.content}
                                 />
-                                {/* <button className={this.state.button[1]} type="submit" name="action" onClick={this.wall}>back to wall</button>
-                                <h4>{this.state.projContent.name} by {this.state.projContent.user}</h4>
-                                <p>{this.state.projContent.content}</p> */}
                             </>}
                         </div>
                     </div>
-                    {/* <br />
-                <div className="row">
-                    <Action />
-                </div> */}
-                </div >
-
-                <Profile
-                    mount={this.mount}
-                    addstyle={"fixedProfCard"} />
+                </div>
             </>
         )
-    }
+    };
 };
+
 export default Home;

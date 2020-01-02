@@ -1,5 +1,5 @@
 .titleproj {
-    height: 800px;
+    height: 600px;
     border-radius: 8px;
     border: 1px solid white (185, 115, 187);
     overflow: scroll;
@@ -10,4 +10,10 @@
 
 .projmarjin {
     margin-left: 200px;
+}
+
+@media screen and (max-width: 1000px) {
+    .titleproj {
+        visibility: hidden;
+    }
 }

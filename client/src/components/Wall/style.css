@@ -1,7 +1,7 @@
 .board {
-    height: 800px;
+    height: 600px;
     border-radius: 6px;
-    overflow: scroll;
+    /* overflow: scroll; */
 }
     
     /* Scrollbar styles */

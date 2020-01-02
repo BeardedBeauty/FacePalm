@@ -25,7 +25,7 @@ function Wall(props) {
                     </>
                 }
             </div>
-            <div className="board">
+            <div className="board" onScroll={() => props.onScroll}>
                 <ul className="">
                     {props.children}
                 </ul>
