@@ -10,11 +10,15 @@ function Create(props) {
     }
     return (
         <>
-            <textarea id="textarea2" className="materialize-textarea" onChange={(event) => props.inputtitle(event.target.value)}></textarea>
-            <label for="textarea2">projectTitle</label>
+            <div className="input-field">
+                <textarea id="textarea2" className="materialize-textarea" onChange={(event) => props.inputtitle(event.target.value)}></textarea>
+                <label for="textarea2">projectTitle</label>
+            </div>
             <br />
-            <textarea id="textarea1" className="materialize-textarea" onChange={(event) => props.input(event.target.value)}></textarea>
-            <label for="textarea1">content</label>
+            <div className="input-field">
+                <textarea id="textarea1" className="materialize-textarea" onChange={(event) => props.input(event.target.value)}></textarea>
+                <label for="textarea1">content</label>
+            </div>
             <br />
             <button className={props.button} type="submit" name="action" onClick={() => props.save(user)}>save</button>
 

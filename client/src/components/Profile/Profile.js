@@ -26,7 +26,7 @@ function Profile(props) {
                     <h4>{user.nickname}</h4>
                     <code>{user.email}</code>
                     <div className="divide"></div>
-                    <button className="btn waves-effect waves-light blue" type="submit" name="action" onClick={() => logout()}>logout {user.name}</button>
+                    <button className="btn waves-effect waves-light purple" type="submit" name="action" onClick={() => logout()}>logout {user.name}</button>
                 </>
             )}
         </div>

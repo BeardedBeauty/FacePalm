@@ -16,7 +16,7 @@ class Home extends React.Component {
         this.state = {
             projects: [],
             postText: "",
-            button: ["btn disabled", "btn waves-effect waves-light blue"],
+            button: ["btn disabled", "btn waves-effect waves-light purple"],
             btnState: 0,
             comments: [],
             view: true,

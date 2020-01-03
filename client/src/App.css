@@ -49,3 +49,13 @@ h1.facepalm {
   float: left;
   margin-top: 15px;
 }
+
+input:focus {
+  border-bottom: 1px solid #992bff !important;
+  box-shadow: 0 1px 0 0 #992bff !important;
+}
+
+textarea:focus {
+  border-bottom: 1px solid #992bff !important;
+  box-shadow: 0 1px 0 0 #992bff !important;
+}
