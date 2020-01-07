@@ -25,6 +25,7 @@ This is a forked project. This version of the app is simply a cleaned up and upd
 * [Node](https://nodejs.org/en/)
 * [Express](https://expressjs.com)
 * [MongoDB](https://www.mongodb.com/what-is-mongodb)
+* [Auth0](https://auth0.com)
 
 ## Authors
 * Ryan Scott
