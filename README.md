@@ -20,6 +20,11 @@ This is a forked project. This version of the app is simply a cleaned up and upd
 * [Live](https://syntactictsugar.herokuapp.com/)
 
 ## Built With
+* [React](https://reactjs.org)
+* [Materialize](https://materializecss.com)
+* [Node](https://nodejs.org/en/)
+* [Express](https://expressjs.com)
+* [MongoDB](https://www.mongodb.com/what-is-mongodb)
 
 ## Authors
 * Ryan Scott
