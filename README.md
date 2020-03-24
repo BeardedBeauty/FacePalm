@@ -34,7 +34,7 @@ This is a forked project. This version of the app is simply a cleaned up and upd
 * [Auth0](https://auth0.com)
 
 ## Authors
-* Ryan Scott
-* Mark Hartman
-* Hlee Vang
+* [Ryan Scott](https://github.com/minerbob)
+* [Mark Hartman](https://github.com/LilGherkin)
+* [Hlee Vang](https://github.com/vanghlee01)
 * John Ochs
