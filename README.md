@@ -8,11 +8,15 @@ FacePalm is built on a full MERN stack. This is the final Project to come from t
 Before logging in, you can only view things. Click items on list off to the left to view new projects and text from users.
 The homepage displays user posts automatically, and an empty profile viewer.
 
+![projects](projects.png)
+
 Clear browsing history before attempting to log in. Simply use Google or sign up to log in.
+
+![login](login.png)
 
 When logged in, you are able to view your profile, and post content. If you visit your profile, you will see that you have the ability to create a project. You will also be able to view the projects that you have created.
 
-![projects](projects.png)
+![posts](posts.png)
 
 ### Original Project
 This is a forked project. This version of the app is simply a cleaned up and updated version of the original. Elements are reorganized somewhat, and things slightly out of place are now appropriately positioned.
