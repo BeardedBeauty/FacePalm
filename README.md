@@ -1,6 +1,6 @@
 # FacePalm
 
-FacePalm is built on a full MERN stack. This is the final Project to come from the University of Minnesota Bootcamp. It effectively utilizes our abilities to create a working web app back to front form the ground up.
+FacePalm is built on a full MERN stack. This is the final Project to come from the University of Minnesota Bootcamp. It effectively utilizes our abilities to create a working web app back to front form the ground up. Users have the ability to log in, create profiles and create "projects" where text can be input and saved. Community posts also are displayed on the home page. You have the ability to post things upon logging in.
 
 [View Live](https://face--palm.herokuapp.com/)
 
